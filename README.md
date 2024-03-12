@@ -12,6 +12,7 @@ alt="Youtube demo" width="480" height="360" border="10" /></a>
 
 # Anleitung
 Im Programmordner ist eine Textdatei Eingabetext.txt enthalten. Nach Start des Programms Laudesregiae.exe wird der Inhalt der Textdatei eingelesen und Zeile für Zeile an zufallsgenerierten Positionen ausgegeben. Der Inhalt der Textdatei kann beliebig verändert werden. 
+
 Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. Das Programm lässt sich während des Betriebs abbrechen durch Rechtsklick auf das Symbol in der Taskleiste -> Fenster schließen. Alternativ kann der Prozess "Laudesregiae.exe" auch über den Taskmanager beendet werden.
 
 # Ist es ein Virus?
