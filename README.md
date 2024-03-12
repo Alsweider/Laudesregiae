@@ -14,4 +14,5 @@ Im Programmordner ist eine Textdatei Eingabetext.txt enthalten. Nach Start des P
 # Ist es ein Virus?
 
 Nein, es handelt sich nicht um Schadsoftware, aber Warnungen des Betriebssystems kommen bei neuen Softwareprojekten regelmäßig vor, da diese noch nicht in den Analysedatenbanken vorhanden sind. 
+
 [Virustotal-Analyse](https://www.virustotal.com/gui/file/132fb0e12a621791e42c253da59ef2fe4b5ca6bad225f837cc35c5a828a1e3b5/detection)
