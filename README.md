@@ -16,6 +16,9 @@ Im Programmordner ist eine Textdatei Eingabetext.txt enthalten. Nach Start des P
 Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. Es lässt sich während des Betriebs abbrechen durch Rechtsklick auf das Symbol in der Taskleiste -> Fenster schließen. Alternativ kann der Prozess "Laudesregiae.exe" auch über den Taskmanager beendet werden.
 
 # Einstellungen
+
+![2024-03-17 00_25_26-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/562fff84-61ea-4108-9156-ebd3ebefc486)
+
 Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgenommen werden. Dazu öffnen Sie die Datei in einem Texteditor und passen die Werte nach Belieben an. 
 
 - Geschwindigkeit: Der Wert "speed" ist standardmäßig auf 143 Millisekunden eingestellt. Er steht für die Anzeigedauer pro Zeichen einer Zeile. Enthält eine Zeile der Textdatei 10 Zeichen (inklusive Leerzeichen), wird sie für 10 mal 143 Millisekunden, also knapp anderthalb Sekunden lang, angezeigt.   
