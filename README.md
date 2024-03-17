@@ -2,11 +2,21 @@
 So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einblendet.
 
 <details><summary>Inhalt</summary>
-
+ 
 - [Laudesregiae](#laudesregiae)
 - [Anleitung](#anleitung)
 - [Einstellungen](#einstellungen)
 - [Ist es ein Virus?](#ist-es-ein-virus)
+
+
+</details>
+
+<details><summary>Contents (English)</summary>
+
+- [Laudesregiae (English)](#laudesregiae-english)
+- [Instructions](#instructions)
+- [Settings](#settings)
+- [Is it a Virus?](#is-it-a-virus)
 
 
 </details>
@@ -45,4 +55,41 @@ Nein, es handelt sich nicht um ein Schadprogramm, aber Warnungen des Betriebssys
 
 [Virustotal-Analyse](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
 
-</summary></details>
+
+
+# Laudesregiae (English)
+
+A sort of prayer mill that displays a text file line by line on your desktop.
+
+This programme reads a text file in the programme folder and displays it line by line at random positions on the screen. The duration of each display is calculated based on the length of the lines.
+
+Latest version: [Download](https://github.com/Alsweider/Laudesregiae/releases/latest)
+
+<a href="https://www.youtube-nocookie.com/embed/Nv_yalvvuDA?si=FYwCuuhc0HzVsOtq
+" target="_blank"><img src="http://img.youtube.com/vi/Nv_yalvvuDA/0.jpg" 
+alt="Youtube demo" width="480" height="360" border="10" /></a>
+
+# Instructions
+
+A text file named Eingabetext.txt (input text) is included in the programme folder. After launching the Laudesregiae.exe programme, the content of the text file is read and displayed line by line at randomly generated positions. The content of the text file can be modified as desired.
+
+Once the text file has been traversed, the programme will terminate automatically. It can be aborted during operation by right-clicking on the icon in the taskbar -> Close window. Alternatively, the process "Laudesregiae.exe" can also be terminated via the Task Manager.
+
+## Settings 
+
+![2024-03-17 01_15_51-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/b00b6e71-cbe7-4115-a8f8-e8bda105d596)
+
+Settings can be adjusted in the file "settings.ini" in the application folder. To do this, open the file in a text editor and adjust the values as desired.
+
+- Speed: The "speed" value is set to 143 milliseconds by default. It represents the display duration per character of a line. If a line of the text file contains 10 characters (including spaces), it will be displayed for 10 times 143 milliseconds, which is almost one and a half seconds long.
+- Random Order: To display the lines of the text file in a random order, set the "random=0" value to "random=1".
+- Repeat: To play the text file in an endless loop, set the "loop=0" value to "loop=1". Note: This will prevent the programme from automatically terminating and it must be closed in the taskbar or with the Task Manager.
+  
+To reset the settings, you can delete the file "settings.ini". It will be recreated on the next program start.
+
+# Is it a Virus?
+
+No, it is not malware, but warnings from the operating system are common with new software projects, as they have not been present in the analysis databases for long enough to be considered safe.
+
+[Virustotal Analysis](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
+
