@@ -71,7 +71,7 @@ alt="Youtube demo" width="480" height="360" border="10" /></a>
 
 # Instructions
 
-A text file named Eingabetext.txt (input text) is included in the programme folder. After launching the Laudesregiae.exe programme, the content of the text file is read and displayed line by line at randomly generated positions. The text file can be modified as desired.
+A text file named Eingabetext.txt (input text) is included in the programme folder. After launching Laudesregiae.exe, the content of the text file is read and displayed line by line at randomly generated positions. The text file can be modified as desired.
 
 Once the text file has been traversed, the programme will terminate automatically. It can be aborted during operation by right-clicking on the icon in the taskbar -> Close window. Alternatively, the process "Laudesregiae.exe" can also be terminated via the Task Manager.
 
