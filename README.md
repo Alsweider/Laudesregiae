@@ -1,7 +1,7 @@
 # Laudesregiae
 So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einblendet.
 
-<details><summary>Inhalt</summary>
+<details><summary>Inhalt (Deutsch)</summary>
  
 - [Laudesregiae](#laudesregiae)
 - [Anleitung](#anleitung)
