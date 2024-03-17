@@ -1,6 +1,11 @@
 # Laudesregiae
 So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einblendet.
 
+- [Start](#Laudesregiae)
+- [Anleitung](#Anleitung)
+- [Einstellungen](##Einstellungen)
+- [Virenschutz](#Ist es ein Virus?)
+
 Dieses Programm liest eine Textdatei im Programmordner ein und gibt sie Zeile für Zeile an zufälligen Stellen auf dem Bildschirm aus. Die Einblendedauer wird auf Grundlage der Zeilenlänge berechnet.
 
 Neueste Version: [Herunterladen](https://github.com/Alsweider/Laudesregiae/releases/latest)
@@ -15,7 +20,7 @@ Im Programmordner ist eine Textdatei Eingabetext.txt enthalten. Nach Start des P
 
 Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. Es lässt sich während des Betriebs abbrechen durch Rechtsklick auf das Symbol in der Taskleiste -> Fenster schließen. Alternativ kann der Prozess "Laudesregiae.exe" auch über den Taskmanager beendet werden.
 
-# Einstellungen
+## Einstellungen
 
 ![2024-03-17 01_15_51-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/b00b6e71-cbe7-4115-a8f8-e8bda105d596)
 
