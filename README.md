@@ -17,12 +17,13 @@ Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. 
 
 # Einstellungen
 
-![2024-03-17 00_25_26-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/562fff84-61ea-4108-9156-ebd3ebefc486)
+![2024-03-17 01_15_51-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/b00b6e71-cbe7-4115-a8f8-e8bda105d596)
 
 Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgenommen werden. Dazu öffnen Sie die Datei in einem Texteditor und passen die Werte nach Belieben an. 
 
 - Geschwindigkeit: Der Wert "speed" ist standardmäßig auf 143 Millisekunden eingestellt. Er steht für die Anzeigedauer pro Zeichen einer Zeile. Enthält eine Zeile der Textdatei 10 Zeichen (inklusive Leerzeichen), wird sie für 10 mal 143 Millisekunden, also knapp anderthalb Sekunden lang, angezeigt.   
-- Zufallsreihenfolge: Um die Zeilen der Textdatei in zufälliger Reihenfolge wiederzugeben, setzen Sie den Wert "random=0" auf "random=1". 
+- Zufallsreihenfolge: Um die Zeilen der Textdatei in zufälliger Reihenfolge wiederzugeben, setzen Sie den Wert "random=0" auf "random=1".
+- Wiederholung: Um die Textdatei in einer Endlosschleife abzuspulen, setzen Sie den Wert "loop=0" auf "loop=1". Achtung: Das Programm wird sich dadurch nicht mehr von selbst beenden, sondern muss in der Taskleiste oder mit dem Taskmanager geschlossen werden.
 
  Um die Einstellungen zurückzusetzen, können Sie die Datei "settings.ini" löschen. Sie wird beim nächsten Programmstart neu erstellt. 
 
