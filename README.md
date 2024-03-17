@@ -59,7 +59,7 @@ Nein, es handelt sich nicht um ein Schadprogramm, aber Warnungen des Betriebssys
 
 # Laudesregiae (English)
 
-A sort of prayer mill that displays a text file line by line on your desktop.
+A sort of prayer wheel that displays a text file line by line on your desktop.
 
 This programme reads a text file in the programme folder and displays it line by line at random positions on the screen. The duration of each display is calculated based on the length of the lines.
 
@@ -71,7 +71,7 @@ alt="Youtube demo" width="480" height="360" border="10" /></a>
 
 # Instructions
 
-A text file named Eingabetext.txt (input text) is included in the programme folder. After launching the Laudesregiae.exe programme, the content of the text file is read and displayed line by line at randomly generated positions. The content of the text file can be modified as desired.
+A text file named Eingabetext.txt (input text) is included in the programme folder. After launching the Laudesregiae.exe programme, the content of the text file is read and displayed line by line at randomly generated positions. The text file can be modified as desired.
 
 Once the text file has been traversed, the programme will terminate automatically. It can be aborted during operation by right-clicking on the icon in the taskbar -> Close window. Alternatively, the process "Laudesregiae.exe" can also be terminated via the Task Manager.
 
