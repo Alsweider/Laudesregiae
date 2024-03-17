@@ -31,4 +31,4 @@ Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgen
 
 Nein, es handelt sich nicht um Schadsoftware, aber Warnungen des Betriebssystems kommen bei neuen Softwareprojekten regelmäßig vor, da diese noch nicht in den Analysedatenbanken vorhanden sind. 
 
-[Virustotal-Analyse](https://www.virustotal.com/gui/file/132fb0e12a621791e42c253da59ef2fe4b5ca6bad225f837cc35c5a828a1e3b5/detection)
+[Virustotal-Analyse](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
