@@ -85,7 +85,7 @@ Settings can be adjusted in the file "settings.ini" in the application folder. T
 - Random Order: To display the lines of the text file in a random order, set the "random=0" value to "random=1".
 - Repeat: To play the text file in an endless loop, set the "loop=0" value to "loop=1". Note: This will prevent the programme from automatically terminating and it must be closed in the taskbar or with the Task Manager.
   
-To reset the settings, you can delete the file "settings.ini". It will be recreated on the next program start.
+To reset the settings, you can delete the file "settings.ini". It will be recreated on the next programme start.
 
 # Is it a Virus?
 
