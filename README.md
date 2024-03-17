@@ -1,9 +1,16 @@
 # Laudesregiae
 So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einblendet.
 
-- [Start](#Laudesregiae)
-- [Anleitung](#Anleitung)
-- [Einstellungen](#Einstellungen)
+<details><summary>Inhalt</summary>
+
+- [Laudesregiae](#laudesregiae)
+- [Anleitung](#anleitung)
+- [Einstellungen](#einstellungen)
+- [Ist es ein Virus?](#ist-es-ein-virus)
+
+
+</details>
+
 
 Dieses Programm liest eine Textdatei im Programmordner ein und gibt sie Zeile für Zeile an zufälligen Stellen auf dem Bildschirm aus. Die Einblendedauer wird auf Grundlage der Zeilenlänge berechnet.
 
@@ -15,6 +22,7 @@ Neueste Version: [Herunterladen](https://github.com/Alsweider/Laudesregiae/relea
 alt="Youtube demo" width="480" height="360" border="10" /></a>
 
 # Anleitung
+
 Im Programmordner ist eine Textdatei Eingabetext.txt enthalten. Nach Start des Programms Laudesregiae.exe wird der Inhalt der Textdatei eingelesen und Zeile für Zeile an zufallsgenerierten Positionen ausgegeben. Der Inhalt der Textdatei kann beliebig verändert werden. 
 
 Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. Es lässt sich während des Betriebs abbrechen durch Rechtsklick auf das Symbol in der Taskleiste -> Fenster schließen. Alternativ kann der Prozess "Laudesregiae.exe" auch über den Taskmanager beendet werden.
@@ -36,3 +44,5 @@ Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgen
 Nein, es handelt sich nicht um Schadsoftware, aber Warnungen des Betriebssystems kommen bei neuen Softwareprojekten regelmäßig vor, da diese noch nicht in den Analysedatenbanken vorhanden sind. 
 
 [Virustotal-Analyse](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
+
+</summary></details>
