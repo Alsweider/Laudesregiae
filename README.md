@@ -3,7 +3,7 @@ So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einb
 
 - [Start](#Laudesregiae)
 - [Anleitung](#Anleitung)
-- [Einstellungen](##Einstellungen)
+- [Einstellungen](#Einstellungen)
 
 Dieses Programm liest eine Textdatei im Programmordner ein und gibt sie Zeile für Zeile an zufälligen Stellen auf dem Bildschirm aus. Die Einblendedauer wird auf Grundlage der Zeilenlänge berechnet.
 
