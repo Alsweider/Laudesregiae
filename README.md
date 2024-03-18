@@ -54,6 +54,10 @@ Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgen
 
 Nein, es handelt sich nicht um ein Schadprogramm, aber Warnungen des Betriebssystems kommen bei neuen Softwareprojekten regelmäßig vor, da diese noch nicht lange genug in den Analysedatenbanken vorhanden sind, um als unbedenklich zu gelten. 
 
+<a href="https://www.youtube-nocookie.com/embed/7Vg6RbkM0n8
+" target="_blank"><img src="http://img.youtube.com/vi/7Vg6RbkM0n8/0.jpg" 
+alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
+
 [Virustotal-Analyse](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
 
 
@@ -92,6 +96,10 @@ To reset the settings, you can delete the file "settings.ini". It will be recrea
 # Is it a Virus?
 
 No, it is not malware, but warnings from the operating system are common with new software projects, as they have not been present in the analysis databases for long enough to be considered safe.
+
+<a href="https://www.youtube-nocookie.com/embed/7Vg6RbkM0n8
+" target="_blank"><img src="http://img.youtube.com/vi/7Vg6RbkM0n8/0.jpg" 
+alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 
 [Virustotal Analysis](https://www.virustotal.com/gui/file/2c54c04ad9c573b6c49606921f5f4fee3b41a54abc6720d3e287888d0b216575/detection)
 
