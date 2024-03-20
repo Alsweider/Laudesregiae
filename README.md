@@ -39,14 +39,15 @@ Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. 
 
 ## Einstellungen
 
-![2024-03-18 02_13_44-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/d8903cc6-a729-47b5-a225-d3fd2088ea90)
+![2024-03-20 01_10_07-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/913812a7-10c7-45cf-8520-3ff6c2e3984a)
 
 Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgenommen werden. Dazu öffnen Sie die Datei in einem Texteditor und passen die Werte nach Belieben an. 
 
 - Geschwindigkeit: Der Wert "speed" ist standardmäßig auf 143 Millisekunden eingestellt. Er steht für die Anzeigedauer pro Zeichen einer Zeile. Enthält eine Zeile der Textdatei 10 Zeichen (inklusive Leerzeichen), wird sie für 10 mal 143 Millisekunden, also knapp anderthalb Sekunden lang, angezeigt.   
 - Zufallsreihenfolge: Um die Zeilen der Textdatei in zufälliger Reihenfolge wiederzugeben, setzen Sie den Wert "random=0" auf "random=1".
 - Wiederholung: Um die Textdatei in einer Endlosschleife abzuspulen, setzen Sie den Wert "loop=0" auf "loop=1". Achtung: Das Programm wird sich dadurch nicht mehr von selbst beenden, sondern muss in der Taskleiste oder mit dem Taskmanager geschlossen werden.
-- Pausen: Mit dem Wert "pausetime=1000" wird der zeitliche Abstand zwischen dem Einblenden der einzelnen Textzeilen auf 1000 Millisekunden eingestellt. 
+- Pausen: Mit dem Wert "pausetime=1000" wird der zeitliche Abstand zwischen dem Einblenden der einzelnen Textzeilen auf 1000 Millisekunden eingestellt.
+- Zufallspausen: Der Wert "pausetimerandom" erhält standardmäßig die gleiche Zeit in Millisekunden wie der Wert "pausetime". Die tatsächliche Pause wird per Zufallsgenerator errechnet und erhält einen zufälligen Wert, der zwischen "pausetime" und "pausetimerandom" liegt. Beispiel: Sie definieren die Werte wie folgt: "pausetime=1000" und "pausetimerandom=5000". Ergebnis: Jede Zeile wird für eine zufällige Zeit zwischen 1 und 5 Sekunden angezeigt. Wenn beide Werte gleich sind, hat die Pause eine festgelegte Dauer und der Zufallsfaktor kommt nicht zum Tragen.
 
  Um die Einstellungen zurückzusetzen, können Sie die Datei "settings.ini" löschen. Sie wird beim nächsten Programmstart neu erstellt. 
 
@@ -82,7 +83,7 @@ Once the text file has been traversed, the programme will terminate automaticall
 
 ## Settings 
 
-![2024-03-18 02_13_44-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/d8903cc6-a729-47b5-a225-d3fd2088ea90)
+![2024-03-20 01_10_07-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/913812a7-10c7-45cf-8520-3ff6c2e3984a)
 
 Settings can be adjusted in the file "settings.ini" in the application folder. To do this, open the file in a text editor and adjust the values as desired.
 
@@ -90,6 +91,7 @@ Settings can be adjusted in the file "settings.ini" in the application folder. T
 - Random Order: To display the lines of the text file in a random order, set the "random=0" value to "random=1".
 - Repeat: To play the text file in an endless loop, set the "loop=0" value to "loop=1". Note: This will prevent the programme from automatically terminating and it must be closed in the taskbar or with the Task Manager.
 - Pauses: The parameter "pausetime=1000" adjusts the temporal interval between the appearance of individual lines of text to 1000 milliseconds.
+- Random Pauses: The value "pausetimerandom" defaults to the same time in milliseconds as the value "pausetime". The actual duration is calculated using a random number generator and receives a random value between "pausetime" and "pausetimerandom". For instance: You define the values as follows: "pausetime=1000" and "pausetimerandom=5000". Outcome: Each line will be displayed for a random duration between 1 and 5 seconds. If both values are equal, the pause will have a fixed duration, and the random factor will not come into play.
   
 To reset the settings, you can delete the file "settings.ini". It will be recreated on the next programme start.
 
