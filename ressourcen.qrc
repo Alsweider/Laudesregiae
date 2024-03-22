@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/ressourcen">
+        <file>carolingia.ttf</file>
+    </qresource>
+</RCC>
