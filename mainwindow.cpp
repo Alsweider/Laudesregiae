@@ -31,9 +31,10 @@ MainWindow::MainWindow(QWidget *parent)
         QMessageBox::information(this, "Hinweis", "Die Datei ist nicht vorhanden. "
                                                   "Bitte erstellen Sie eine Datei \"Eingabetext.txt\" im Programmordner "
                                                   "und starten Sie das Programm erneut.");
-
         close();
     }
+
+    einlesen();
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(Ausgeben()));
@@ -159,14 +160,6 @@ void MainWindow::saveSettings()
 
 
 void MainWindow::ausgabeSchleife(){
-    datei->open(QIODevice::ReadOnly);
-    in.setDevice(datei);
-    // Erstelle Liste für Zeilen
-    QStringList lines;
-    while (!in.atEnd()) {
-        QString line = in.readLine();
-        lines.append(line);
-    }
 
     qDebug() << "Anzahl der Lines: " << lines.count() << "\n";
 
@@ -269,7 +262,6 @@ void MainWindow::ausgabeSchleife(){
         QTimer::singleShot(anzeigeDauer + tempPause, &loop, SLOT(quit()));
 
         loop.exec();
-        datei->close();
     }
 
 }
@@ -280,8 +272,12 @@ void MainWindow::closeEvent(QCloseEvent *event){
     loop = false;
     timer->stop();
     leerTimer->stop();
+
     //Und vergiss nicht, die Tür abzuschließen, ja?
-    datei->close();
+    if(datei->isOpen()){
+        qDebug() << "Datei war noch geöffnet. Na sowas...\n";
+        datei->close();
+    }
 }
 
 int MainWindow::calculatePauseTime(int zeit1, int zeit2){
@@ -294,3 +290,17 @@ int MainWindow::calculatePauseTime(int zeit1, int zeit2){
     return tempPause;
 }
 
+void MainWindow::einlesen(){
+    qDebug() << "Datei wird eingelesen.\n";
+    // Öffnen und Einlesen der Datei
+    datei->open(QIODevice::ReadOnly);
+    in.setDevice(datei);
+
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        lines.append(line);
+    }
+
+    datei->close();
+    qDebug() << "Datei geschlossen.\n";
+}

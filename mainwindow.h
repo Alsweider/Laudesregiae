@@ -30,7 +30,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    void Einlesen();
+    void einlesen();
     QString dateiName;
     //für die Datei
     QFile *datei;
@@ -49,6 +49,7 @@ private:
     void ausgabeSchleife();
     int calculatePauseTime(int, int);
     int x,y; //Label-Koordinaten
+    QStringList lines;
 
 protected:
     void closeEvent(QCloseEvent *event) override;
