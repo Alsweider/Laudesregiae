@@ -41,10 +41,10 @@ private:
     void loadSettings();
     void saveSettings();
     QString settingsFile;
-    bool random, loop;
+    bool randomorder, looptext;
     QString font;
-    double speed, faktor;
-    int pause, pausetimerandom;
+    double displayDuration, faktor;
+    int pausemin, pausemax;
     QSettings settings;
     void ausgabeSchleife();
     int calculatePauseTime(int, int);

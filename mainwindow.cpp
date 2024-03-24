@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     settingsFile = QApplication::applicationDirPath() + "/settings.ini";
     saveSettings();
     loadSettings();
-    qDebug() << "Speed-Einstellung: " << speed << "\n";
+    qDebug() << "displayDuration-Einstellung: " << displayDuration << "\n";
 
     QFontDatabase::addApplicationFont(":/new/ressourcen/carolingia.ttf");
 
@@ -55,12 +55,12 @@ MainWindow::~MainWindow()
 void MainWindow::Ausgeben(){
     qDebug() << "Ausgeben aufgerufen\n";
 
-    if (loop == true) {
+    if (looptext == true) {
         do {
             ausgabeSchleife();
-        } while (loop == true);
+        } while (looptext == true);
     } else {
-        //Wenn loop nicht true ist, nur einmal durchlaufen
+        //Wenn looptext nicht true ist, nur einmal durchlaufen
         ausgabeSchleife();
         timer->stop();
     }
@@ -102,11 +102,11 @@ void MainWindow::loadSettings()
     qDebug() << "loadSettings() aufgerufen\n";
     QSettings setting(settingsFile, QSettings::IniFormat);
     setting.beginGroup("Settings");
-    speed = setting.value("speed",143).toDouble();
-    random = setting.value("random",false).toBool();
-    loop = setting.value("loop",false).toBool();
-    pause = setting.value("pausetime",1000).toInt();
-    pausetimerandom = setting.value("pausetimerandom",setting.value("pausetime",1000)).toInt();
+    displayDuration = setting.value("displayduration",143).toDouble();
+    randomorder = setting.value("randomorder",false).toBool();
+    looptext = setting.value("looptext",false).toBool();
+    pausemin = setting.value("pausemin",1000).toInt();
+    pausemax = setting.value("pausemax",setting.value("pausetime",1000)).toInt();
     font = setting.value("font","Carolingia").toString();
     fontsize = setting.value("fontsize","30").toInt();
 
@@ -119,10 +119,11 @@ void MainWindow::loadSettings()
     setting.endGroup();
 
     qDebug() << "loadSettings() fertig ausgeführt.\n";
-    qDebug() << "Speed: " << speed << '\n';
-    qDebug() << "Random: " << random << '\n';
-    qDebug() << "Loop: " << loop << '\n';
-    qDebug() << "Pause: " << pause << '\n';
+    qDebug() << "displayDuration: " << displayDuration << '\n';
+    qDebug() << "Random: " << randomorder << '\n';
+    qDebug() << "looptext: " << looptext << '\n';
+    qDebug() << "pausemin: " << pausemin << '\n';
+    qDebug() << "pausemax: " << pausemax << '\n';
 }
 
 void MainWindow::saveSettings()
@@ -131,29 +132,29 @@ void MainWindow::saveSettings()
    QSettings setting(settingsFile, QSettings::IniFormat);
    setting.beginGroup("Settings");
 
-   if (!setting.contains("speed")){
-       setting.setValue("speed", 143);
-       qDebug() << "\"speed\" hatte noch keinen Standardwert. Standard 143 festgelegt.\n";
+   if (!setting.contains("displayduration")){
+       setting.setValue("displayduration", 143);
+       qDebug() << "\"displayduration\" hatte noch keinen Standardwert. Standard 143 festgelegt.\n";
    }
 
-   if (!setting.contains("random")){
-       setting.setValue("random", false);
-       qDebug() << "\"random\" hatte noch keinen Standardwert. Standard \"false\" festgelegt.\n";
+   if (!setting.contains("randomorder")){
+       setting.setValue("randomorder", false);
+       qDebug() << "\"randomorder\" hatte noch keinen Standardwert. Standard \"false\" festgelegt.\n";
    }
 
-   if (!setting.contains("loop")){
-       setting.setValue("loop", false);
-       qDebug() << "\"loop\" hatte noch keinen Standardwert. Standard \"false\" festgelegt.\n";
+   if (!setting.contains("looptext")){
+       setting.setValue("looptext", false);
+       qDebug() << "\"looptext\" hatte noch keinen Standardwert. Standard \"false\" festgelegt.\n";
    }
 
-   if (!setting.contains("pausetime")){
-       setting.setValue("pausetime", 1000);
-       qDebug() << "\"pausetime\" hatte noch keinen Standardwert. Standard 1000 festgelegt.\n";
+   if (!setting.contains("pausemin")){
+       setting.setValue("pausemin", 1000);
+       qDebug() << "\"pausemin\" hatte noch keinen Standardwert. Standard 1000 festgelegt.\n";
    }
 
-   if (!setting.contains("pausetimerandom")){
-       setting.setValue("pausetimerandom", setting.value("pausetime"));
-       qDebug() << "\"pausetimerandom\" hatte noch keinen Standardwert. Standardmäßig den Wert von \"pausetime\" festgelegt.\n";
+   if (!setting.contains("pausemax")){
+       setting.setValue("pausemax", setting.value("pausemin"));
+       qDebug() << "\"pausemax\" hatte noch keinen Standardwert. Standardmäßig den Wert von \"pausemin\" festgelegt.\n";
    }
 
    if (!setting.contains("font")){
@@ -187,8 +188,8 @@ void MainWindow::ausgabeSchleife(){
 
     qDebug() << "Anzahl der Lines: " << lines.count() << "\n";
 
-    // Wenn random auf true gesetzt ist, Zeilen mischen
-    if (random == true) {
+    // Wenn randomorder auf true gesetzt ist, Zeilen mischen
+    if (randomorder == true) {
         qDebug() << "Zufallsreihenfolge festgelegt.\n";
         std::random_device rd;
         std::mt19937 g(rd());
@@ -262,15 +263,15 @@ void MainWindow::ausgabeSchleife(){
         }
 
         //Berechnen der Anzeigedauer basierend auf der Zeichenlänge
-        if (speed != 0){
-            faktor = speed;
+        if (displayDuration != 0){
+            faktor = displayDuration;
         } else{
             faktor = 143;
         }
         int anzeigeDauer = (line.length() * faktor);
 
         //Pause berechnen
-        int tempPause = calculatePauseTime(pause, pausetimerandom);
+        int tempPause = calculatePauseTime(pausemin, pausemax);
 
         qDebug() << "Text: " << line << '\n';
         qDebug() << "Line-länge: " << line.length() << '\n';
@@ -279,13 +280,13 @@ void MainWindow::ausgabeSchleife(){
 
         leerTimer->start(anzeigeDauer);
 
-        // Warte, bis der Timer abgelaufen ist
-        QEventLoop loop;
-        connect(timer, SIGNAL(timeout()), &loop, SLOT(quit()));
+        //Warte, bis der Timer abgelaufen ist
+        QEventLoop pausenschleife;
+        connect(timer, SIGNAL(timeout()), &pausenschleife, SLOT(quit()));
         //Timer starten, um die Schleife zu beenden
-        QTimer::singleShot(anzeigeDauer + tempPause, &loop, SLOT(quit()));
+        QTimer::singleShot(anzeigeDauer + tempPause, &pausenschleife, SLOT(quit()));
 
-        loop.exec();
+        pausenschleife.exec();
     }
 
 }
@@ -293,7 +294,7 @@ void MainWindow::ausgabeSchleife(){
 //Überschriebenes closeEvent, um lose Enden zu verbinden.
 void MainWindow::closeEvent(QCloseEvent *event){
     qDebug() << "Close-Event aufgerufen\n";
-    loop = false;
+    looptext = false;
     timer->stop();
     leerTimer->stop();
 
