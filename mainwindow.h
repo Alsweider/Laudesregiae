@@ -50,6 +50,9 @@ private:
     int calculatePauseTime(int, int);
     int x,y; //Label-Koordinaten
     QStringList lines;
+    int fontsize;
+    QString colourText, colourBackground;
+    QString convertHexToRGB(QString);
 
 protected:
     void closeEvent(QCloseEvent *event) override;

@@ -108,6 +108,14 @@ void MainWindow::loadSettings()
     pause = setting.value("pausetime",1000).toInt();
     pausetimerandom = setting.value("pausetimerandom",setting.value("pausetime",1000)).toInt();
     font = setting.value("font","Carolingia").toString();
+    fontsize = setting.value("fontsize","30").toInt();
+
+    colourText = setting.value("colourtext","rgb(170, 0, 0)").toString();
+    colourText = convertHexToRGB(colourText);
+
+    colourBackground = setting.value("colourbackground","rgb(235, 213, 179)").toString();
+    colourBackground = convertHexToRGB(colourBackground);
+
     setting.endGroup();
 
     qDebug() << "loadSettings() fertig ausgeführt.\n";
@@ -153,6 +161,22 @@ void MainWindow::saveSettings()
        qDebug() << "\"font\" hatte noch keinen Standardwert. Standardmäßig die Schriftart \"Carolingia\" festgelegt.\n";
    }
 
+   if (!setting.contains("fontsize")){
+       setting.setValue("fontsize","30");
+       qDebug() << "\"fontsize\" hatte noch keinen Standardwert. Standardmäßig 30 festgelegt.\n";
+   }
+
+   if (!setting.contains("colourtext")){
+       setting.setValue("colourtext","#AA0000");
+       qDebug() << "\"colourtext\" hatte noch keinen Standardwert. Standardmäßig die Farbe #AA0000 (rgb(170, 0, 0)) festgelegt.\n";
+   }
+
+   if (!setting.contains("colourbackground")){
+       setting.setValue("colourbackground","#EBD5B3");
+       qDebug() << "\"colourbackground\" hatte noch keinen Standardwert. Standardmäßig die Farbe #EBD5B3 (rgb(235, 213, 179)) festgelegt.\n";
+   }
+
+
    setting.endGroup();
    qDebug() << "saveSettings() fertig ausgeführt.\n";
 
@@ -175,7 +199,7 @@ void MainWindow::ausgabeSchleife(){
     for (const QString& line : lines) {
 
         //Stylesheet zusammensetzen
-        QString stylesheetLabel = QString("font: 30pt \"%1\"; color: rgb(170, 0, 0); background-color: rgb(235, 213, 179)").arg(font);
+        QString stylesheetLabel = QString("font: %2pt \"%1\"; color: %3; background-color: %4").arg(font).arg(fontsize).arg(colourText).arg(colourBackground);
         ui->label->setStyleSheet(stylesheetLabel);
 
         //Bildschirmgröße abrufen
@@ -303,4 +327,17 @@ void MainWindow::einlesen(){
 
     datei->close();
     qDebug() << "Datei geschlossen.\n";
+}
+
+
+QString MainWindow::convertHexToRGB(QString hexColour){
+    QColor colour(hexColour);
+
+    int red = colour.red();
+    int green = colour.green();
+    int blue = colour.blue();
+
+    QString rgbColour = QString("rgb(%1, %2, %3)").arg(red).arg(green).arg(blue);
+    qDebug() << "Farbe " << hexColour << " wurde zu " << rgbColour << "konvertiert.\n";
+    return rgbColour;
 }
