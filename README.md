@@ -39,7 +39,8 @@ Sobald die Textdatei durchgelaufen ist, beendet sich das Programm selbständig. 
 
 ## Einstellungen
 
-![2024-03-21 02_55_55-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/7f9ac202-3000-48e6-bfc6-adb5a2323cfc)
+![2024-03-24 07_14_40-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/7ae20b79-6b3f-4f8b-9226-94646d0839d6)
+
 
 Einstellungen können in der Datei "settings.ini" im Ordner der Anwendung vorgenommen werden. Dazu öffnen Sie die Datei in einem Texteditor und passen die Werte nach Belieben an. 
 
@@ -82,7 +83,7 @@ Once the text file has been traversed, the programme will terminate automaticall
 
 ## Settings 
 
-![2024-03-21 02_55_55-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/7f9ac202-3000-48e6-bfc6-adb5a2323cfc)
+![2024-03-24 07_14_40-settings ini - Editor](https://github.com/Alsweider/Laudesregiae/assets/30653982/7ae20b79-6b3f-4f8b-9226-94646d0839d6)
 
 Settings can be adjusted in the file "settings.ini" in the application folder. To do this, open the file in a text editor and adjust the values as desired.
 
