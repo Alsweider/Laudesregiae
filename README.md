@@ -63,7 +63,7 @@ Nein, es handelt sich nicht um ein Schadprogramm, aber Warnungen des Betriebssys
 " target="_blank"><img src="http://img.youtube.com/vi/7Vg6RbkM0n8/0.jpg" 
 alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 
-[Virustotal-Analyse](https://www.virustotal.com/gui/file/7bdccd4aed309763e6f8ddb7b4b308e61adee7f968559c148ea9cabdd73709ff/detection)
+[Virustotal-Analyse v0.6.0](https://www.virustotal.com/gui/file/1e9e6f79487a4ff00fa903ad3a4000632537de751db027b3f0841b5bb2fe0e2e/detection)
 
 # Laudesregiae (English)
 
@@ -108,4 +108,4 @@ No, it is not malware, but warnings from the operating system are common with ne
 " target="_blank"><img src="http://img.youtube.com/vi/7Vg6RbkM0n8/0.jpg" 
 alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 
-[Virustotal Analysis](https://www.virustotal.com/gui/file/7bdccd4aed309763e6f8ddb7b4b308e61adee7f968559c148ea9cabdd73709ff/detection)
+[Virustotal Analysis v0.6.0](https://www.virustotal.com/gui/file/1e9e6f79487a4ff00fa903ad3a4000632537de751db027b3f0841b5bb2fe0e2e/detection)
