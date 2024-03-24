@@ -7,7 +7,7 @@ So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einb
 - [Anleitung](#anleitung)
 - [Einstellungen](#einstellungen)
 - [Ist es ein Virus?](#ist-es-ein-virus)
-
+- [Entwicklung unterstützen](#entwicklung-unterst%C3%BCtzen)
 
 </details>
 
@@ -17,8 +17,8 @@ So 'ne Art Gebetsmühle, die dir eine Textdatei zeilenweise auf dem Desktop einb
 - [Instructions](#instructions)
 - [Settings](#settings)
 - [Is it a Virus?](#is-it-a-virus)
-
-
+- [Support development](#support-development)
+  
 </details>
 
 
@@ -63,6 +63,14 @@ alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 
 [Virustotal-Analyse v0.6.0](https://www.virustotal.com/gui/file/1e9e6f79487a4ff00fa903ad3a4000632537de751db027b3f0841b5bb2fe0e2e/detection)
 
+# Entwicklung unterstützen
+
+Für eine freiwillige Unterstützung des Entwicklers können Sie hier spenden:
+
+- Monero (XMR): 88o74DJuHyxNr8rFkbH2xaFKkN35jiUcS12htB13SNPVVrzA4zX4ruJj8AXURrR3ssMni8zeQZHAjV6aFYwNUZy8AwT5c8M
+![Monero Software](https://github.com/Alsweider/SpotiQuit/assets/30653982/b98b5145-c5fb-425e-b729-4897362028a2)
+- [Patreon](https://patreon.com/alsweider)
+
 # Laudesregiae (English)
 
 A sort of prayer wheel that displays a text file line by line on your desktop.
@@ -106,3 +114,11 @@ No, it is not malware, but warnings from the operating system are common with ne
 alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 
 [Virustotal Analysis v0.6.0](https://www.virustotal.com/gui/file/1e9e6f79487a4ff00fa903ad3a4000632537de751db027b3f0841b5bb2fe0e2e/detection)
+
+# Support development
+
+If you would like to support my efforts, you can make a voluntary donation here:
+  
+- Monero (XMR): 88o74DJuHyxNr8rFkbH2xaFKkN35jiUcS12htB13SNPVVrzA4zX4ruJj8AXURrR3ssMni8zeQZHAjV6aFYwNUZy8AwT5c8M
+![Monero Software](https://github.com/Alsweider/SpotiQuit/assets/30653982/b98b5145-c5fb-425e-b729-4897362028a2)
+- [Patreon](https://patreon.com/alsweider)
