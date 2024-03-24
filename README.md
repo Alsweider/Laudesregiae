@@ -26,7 +26,6 @@ Dieses Programm liest eine Textdatei im Programmordner ein und gibt sie Zeile f�
 
 Neueste Version: [Herunterladen](https://github.com/Alsweider/Laudesregiae/releases/latest)
 
-
 <a href="https://www.youtube-nocookie.com/embed/Nv_yalvvuDA?si=FYwCuuhc0HzVsOtq
 " target="_blank"><img src="http://img.youtube.com/vi/Nv_yalvvuDA/0.jpg" 
 alt="Youtube demo" width="480" height="360" border="10" /></a>
@@ -68,6 +67,7 @@ alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 Für eine freiwillige Unterstützung des Entwicklers können Sie hier spenden:
 
 - Monero (XMR): 88o74DJuHyxNr8rFkbH2xaFKkN35jiUcS12htB13SNPVVrzA4zX4ruJj8AXURrR3ssMni8zeQZHAjV6aFYwNUZy8AwT5c8M
+
 ![Monero Software](https://github.com/Alsweider/SpotiQuit/assets/30653982/b98b5145-c5fb-425e-b729-4897362028a2)
 - [Patreon](https://patreon.com/alsweider)
 
@@ -120,5 +120,6 @@ alt="Circumvent SmartScreen" width="480" height="360" border="10" /></a>
 If you would like to support my efforts, you can make a voluntary donation here:
   
 - Monero (XMR): 88o74DJuHyxNr8rFkbH2xaFKkN35jiUcS12htB13SNPVVrzA4zX4ruJj8AXURrR3ssMni8zeQZHAjV6aFYwNUZy8AwT5c8M
+
 ![Monero Software](https://github.com/Alsweider/SpotiQuit/assets/30653982/b98b5145-c5fb-425e-b729-4897362028a2)
 - [Patreon](https://patreon.com/alsweider)
