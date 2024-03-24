@@ -25,3 +25,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     ressourcen.qrc
+
+RC_ICONS += \
+    Logo.ico
+
+VERSION = 0.6.2
+

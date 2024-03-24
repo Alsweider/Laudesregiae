@@ -17,7 +17,11 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Laudesregiae v0.6.1</string>
+   <string>Laudesregiae v0.6.2</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressourcen.qrc">
+    <normaloff>:/new/ressourcen/Logo.ico</normaloff>:/new/ressourcen/Logo.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -51,6 +55,8 @@ color: rgb(170, 0, 0);
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="ressourcen.qrc"/>
+ </resources>
  <connections/>
 </ui>
